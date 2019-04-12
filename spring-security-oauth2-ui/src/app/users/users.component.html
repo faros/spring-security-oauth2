@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-12  table-container border">
+      <h2>Users</h2>
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Start</th>
+          <th>Einde</th>
+          <th>Status</th>
+          <th>Bestandsnaam</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.address}}</td>
+          <td>{{user.phone}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

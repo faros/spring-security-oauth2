@@ -1,0 +1,29 @@
+<div class="alert alert-danger pre-line" *ngIf="isInvalidLogin$ | async">
+  <br>
+  <div>De gebruikersnaam en paswoord die u hebt ingegeven zijn ongeldig.</div>
+  <br>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 jumbotron border login-container">
+
+      <h2 style="margin: auto">Aanmelden</h2>
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <hr>
+        <div class="form-group">
+          <label for="userName">Gebruikersnaam</label>
+          <input type="text" class="form-control" autocomplete="off" id="userName" name="userName" ngModel class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Wachtwoord</label>
+          <input type="password" class="form-control" autocomplete="off" id="password" name="password" ngModel class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Aanmelden</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

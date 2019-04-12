@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'spring-security-oauth2-ui';
+  title = 'Demo Application spring-security-oauth2';
 }

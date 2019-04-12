@@ -1,0 +1,6 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #8DC8E8;
+  margin: 0em auto auto;
+}
